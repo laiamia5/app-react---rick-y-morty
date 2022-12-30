@@ -1,0 +1,68 @@
+.next{
+    width: 50px;
+    margin-left: 25px;
+    height: 20px;
+}
+
+.select{
+    width: 80px;
+    height: 20px;;
+    margin-left: 25px;
+}
+
+.conteiner{
+    width: 140px;
+    height: 20px;
+    display: flex;
+    left: 70%;
+    z-index: 2000;
+}
+.filter{
+    width: 50px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pagina{
+    transform: translateY(-20px);
+    margin-left: 10px;
+}
+
+.animation{
+    width: 210px;
+    height: 300px;
+    background-color: #fff;
+    opacity: .7;
+    transform: translateY(-100%);
+    margin: 0;
+    position: absolute;
+    visibility: hidden;
+    }
+
+    .active{
+    animation-duration: 2.5s;
+    animation-name: desplazar;
+    }
+
+     @keyframes desplazar{
+        0%{
+        }
+        30%{
+            transform: translateY(0%);
+            z-index: 23;
+            visibility: visible; 
+        }
+        80%{
+            transform: translateY(0%);
+        }
+    } 
+     
+     .animation > p{
+       margin-top: 50%;
+     }
+
+     .animation > img{
+        width: 20px;
+        height: 20px;
+     }
+
